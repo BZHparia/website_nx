@@ -1,0 +1,87 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/dfz/src",
+  "prefix": "gol",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/dfz",
+        "index": "apps/dfz/src/index.html",
+        "main": "apps/dfz/src/main.ts",
+        "polyfills": "apps/dfz/src/polyfills.ts",
+        "tsConfig": "apps/dfz/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/dfz/src/favicon.ico", "apps/dfz/src/assets"],
+        "styles": ["apps/dfz/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/dfz/src/environments/environment.ts",
+              "with": "apps/dfz/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "dfz:build:production"
+        },
+        "development": {
+          "browserTarget": "dfz:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "dfz:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/dfz/**/*.ts", "apps/dfz/**/*.html"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/dfz"],
+      "options": {
+        "jestConfig": "apps/dfz/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,11 @@
+<!-- <div>
+  {{ width }} et {{ height }}
+</div> -->
+
+<table class="grid">
+  <tr *ngFor="let _ of [].constructor(width); let index0 = index;">
+    <th *ngFor="let _ of [].constructor(height); let index1 = index;"><app-cell [switch]="isEven((index0+index1)%2)"></app-cell></th>
+  </tr>
+</table>
+
+<!-- <canvas #board></canvas> -->
