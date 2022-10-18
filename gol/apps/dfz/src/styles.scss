@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+
+.test {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    background: black;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --g1: rgb(98, 0, 234);
+    --g2: rgb(236, 64, 122);
+}
