@@ -1,0 +1,16 @@
+.box {
+    width: 200px;
+    height: 200px;
+    // flex: 1;
+    background: rgb(128, 66, 66);
+    border-radius: 50%;
+
+    cursor: none;
+}
+
+#cursor {
+    position: fixed;
+    width: 55px;
+    height: 51px;
+    transform: translate(-9px, -11px);
+}

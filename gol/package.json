@@ -1,7 +1,7 @@
 {
-  "name": "gol",
-  "version": "0.0.0",
-  "license": "MIT",
+  "name": "world",
+  "version": "0.0.1",
+  "license": "TD",
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
@@ -20,12 +20,13 @@
     "@angular/platform-browser-dynamic": "~14.0.0",
     "@angular/router": "~14.0.0",
     "@nrwl/angular": "14.3.1",
+    "animejs": "^3.2.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~14.0.0",
+    "@angular-devkit/build-angular": "^14.2.6",
     "@angular-eslint/eslint-plugin": "~13.2.1",
     "@angular-eslint/eslint-plugin-template": "~13.2.1",
     "@angular-eslint/template-parser": "~13.2.1",

@@ -1,10 +1,8 @@
 
-# In a new World
+# In a cold World
 
 <h1 align="center">
-  <a href="https://animejs.com"><img src="/assets/sphere.gif" width="250"/></a>
+  <a href="https://dufaza.fr/"><img src="/assets/sphere.gif" width="250"/></a>
 </h1>
 
 ### Life is good 💪
-
-Visit [my website](https://dufaza.fr/) to see more.

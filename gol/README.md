@@ -1,8 +1,8 @@
 
-# Game Of Life
+# In a cold World
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+<h1 align="center">
+  <a href="https://dufaza.fr/"><img src="/assets/sphere.gif" width="250"/></a>
+</h1>
 
 ### Life is good 💪
-
-Visit [my website](https://dufaza.fr/) to see more.

@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "dfz": "apps/dfz",
-    "dfz-e2e": "apps/dfz-e2e"
+    "world": "apps/world",
+    "world-e2e": "apps/world-e2e"
   }
 }
