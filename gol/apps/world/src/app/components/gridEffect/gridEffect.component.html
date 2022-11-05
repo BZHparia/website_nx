@@ -1,4 +1,15 @@
 
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;900&display=swap" rel="stylesheet">  -->
+
+<!-- <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;900&display=swap');
+</style>  -->
+
+
 <div class="background">
   <div id="tiles"></div>
   <h1 id="title" class="centered" [ngStyle]="{'opacity':toggled? 0 : 1 }">
@@ -6,4 +17,20 @@
     <span class="fancy">World</span>.
   </h1>
   <i id="icon" class="fa-solid fa-earth-europe centered" [ngStyle]="{'opacity':!toggled? 0 : 1 }"></i>
+
+  <div class="container centered" [ngStyle]="{'opacity':!toggled? 0 : 1 }">
+    <div class="card about_me">
+      <i class="fa-regular fa-user"></i>
+    </div>
+    <div class="card contact_me">
+      CONTACT ME
+    </div>
+    <div class="card interests">
+      INTERESTS
+    </div>
+  </div>
+
+  <div class="in_progress" [ngStyle]="{'opacity':!toggled? 0 : 1 }">
+    <i class="fa-solid fa-person-digging" style="color: white;"></i>
+  </div>
 </div>

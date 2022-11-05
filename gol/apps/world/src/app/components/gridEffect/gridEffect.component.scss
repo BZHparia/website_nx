@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;900&display=swap');
+
 .grid {
     display: grid;
     width: 100%;
@@ -36,9 +38,9 @@
 }
 
 .centered {
-    left: 50%;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -90,8 +92,69 @@
 #icon {
     color: rgba(255, 255, 255, 0.15);
     font-size: 80vmin;
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
     transition: opacity 1200ms ease;
     z-index: 1;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "about_me about_me"
+        "contact_me interests"
+        "contact_me interests";
+    
+    width: 32%;
+    height: 65%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 3200ms ease;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #00000060;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    color: white;
+}
+  
+.about_me {
+    grid-area: about_me;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    // font-style: normal;
+    // font-stretch: normal;
+    // line-height: initial;
+    font-size: 64px;
+    color: white;
+}
+
+.contact_me {
+    grid-area: contact_me;
+}
+
+.interests {
+    grid-area: interests;
+}
+
+.in_progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 5vh;
+    margin: 40px;
+    opacity: 0;
+    transition: opacity 3200ms ease;
+}
+  

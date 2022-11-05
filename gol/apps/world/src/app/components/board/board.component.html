@@ -1,11 +1,37 @@
 <!-- <div>
-  {{ width }} et {{ height }}
+  {{ width }} - {{ height }}
 </div> -->
 
-<table class="grid">
-  <tr *ngFor="let _ of [].constructor(width); let index0 = index;">
-    <th *ngFor="let _ of [].constructor(height); let index1 = index;"><app-cell [switch]="isEven((index0+index1)%2)"></app-cell></th>
+
+<!-- <table class="grid">
+  <tr *ngFor="let _ of [].constructor(columns); let index0 = index;">
+    <th *ngFor="let _ of [].constructor(rows); let index1 = index;"><app-cell [switch]="isEven((index0+index1)%2)"></app-cell></th>
   </tr>
-</table>
+</table> -->
+
 
 <!-- <canvas #board></canvas> -->
+
+
+<!-- <table class="grid">
+  <tr *ngFor="let _ of [].constructor(columns); let index0 = index;">
+    <th *ngFor="let _ of [].constructor(rows); let index1 = index;"><div style="border: 1px red solid;">{{index0 * index1}}</div></th>
+  </tr>
+</table> -->
+
+<!-- <div class="board">
+  <div class="row" *ngFor="let _ of [].constructor(rows);">
+    <div class="cell" *ngFor="let _ of [].constructor(columns);">
+    <app-cell *ngFor="let _ of [].constructor(columns);"></app-cell>
+    </div>
+  </div>
+</div> -->
+
+<div id="board">
+
+</div>
+
+<!-- <div>{{ widthScreen }} x {{ heightScreen }}</div>
+<div>{{ columns }} x {{ rows }}</div> -->
+
+<!-- <app-cell [switch]="isEven((index0+index1)%2)"></app-cell> -->
