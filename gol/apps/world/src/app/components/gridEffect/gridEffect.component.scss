@@ -157,4 +157,15 @@
     opacity: 0;
     transition: opacity 3200ms ease;
 }
-  
+
+.pdf {
+    // height: 100vh;
+    // overflow: hidden;
+    // margin: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

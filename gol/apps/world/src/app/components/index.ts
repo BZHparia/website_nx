@@ -4,6 +4,7 @@ import { CursorComponent } from "./cursor/cursor.component";
 import { GolComponent } from "./gol/gol.component";
 import { GridEffectComponent } from "./gridEffect/gridEffect.component";
 import { PlaygroundComponent } from "./playground/playground.component";
+import { EmojisComponent } from "./emojis/emojis.component";
 
 export * from "./board/board.component";
 export * from "./cell/cell.component";
@@ -11,6 +12,7 @@ export * from "./cursor/cursor.component";
 export * from "./gol/gol.component";
 export * from "./gridEffect/gridEffect.component";
 export * from "./playground/playground.component";
+export * from "./emojis/emojis.component";
 
 
 export const COMPONENTS = [
@@ -20,4 +22,5 @@ export const COMPONENTS = [
     CellComponent,
     PlaygroundComponent,
     CursorComponent,
+    EmojisComponent
 ];

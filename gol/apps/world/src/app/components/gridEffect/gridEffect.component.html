@@ -16,8 +16,11 @@
     Welcome in another
     <span class="fancy">World</span>.
   </h1>
-  <i id="icon" class="fa-solid fa-earth-europe centered" [ngStyle]="{'opacity':!toggled? 0 : 1 }"></i>
 
+  <i id="icon" class="fa-solid fa-earth-europe centered" [ngStyle]="{'opacity':!toggled? 0 : 1 }"></i>
+  <div class="in_progress" [ngStyle]="{'opacity':!toggled? 0 : 1 }">
+    <i class="fa-solid fa-person-digging" style="color: white;"></i>
+  </div>
   <div class="container centered" [ngStyle]="{'opacity':!toggled? 0 : 1 }">
     <div class="card about_me">
       <i class="fa-regular fa-user"></i>
@@ -30,7 +33,11 @@
     </div>
   </div>
 
-  <div class="in_progress" [ngStyle]="{'opacity':!toggled? 0 : 1 }">
-    <i class="fa-solid fa-person-digging" style="color: white;"></i>
-  </div>
+  <!-- <div *ngIf="toggled" class="pdf centered" [ngStyle]="{'opacity':!toggled? 0 : 1 }">
+    <iframe src="/assets/quantique.pdf" width="100%" height="100%"> </iframe>
+  </div> -->
 </div>
+
+<!-- <div *ngIf="toggled" class="pdf centered" [ngStyle]="{'opacity':!toggled? 0 : 1 }">
+  <iframe src="/assets/quantique.pdf" width="100%" height="100%"> </iframe>
+</div> -->
